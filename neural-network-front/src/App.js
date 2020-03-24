@@ -83,7 +83,7 @@ function App() {
   return (
     <Container>
       <Row style={centerElement}>
-        <h1>Digit Recongnition With Neural Network</h1>
+        <h1>Digit Recognition With Neural Network</h1>
       </Row>
       <Row >
         <Col md lg='4' style={{ padding: '1rem' }}>
