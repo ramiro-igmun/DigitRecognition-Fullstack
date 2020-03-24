@@ -1,4 +1,4 @@
-package igmun.ramiro.neuralnetworkrestapi.dtos;
+package igmun.ramiro.neuralnetworkrestapi.domain.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

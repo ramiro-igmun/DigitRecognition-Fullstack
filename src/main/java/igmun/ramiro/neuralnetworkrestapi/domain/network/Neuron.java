@@ -1,4 +1,4 @@
-package igmun.ramiro.neuralnetworkrestapi.network;
+package igmun.ramiro.neuralnetworkrestapi.domain.network;
 
 import java.util.stream.IntStream;
 

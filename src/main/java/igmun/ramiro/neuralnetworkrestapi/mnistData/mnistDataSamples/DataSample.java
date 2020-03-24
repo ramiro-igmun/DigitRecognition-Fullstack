@@ -1,4 +1,4 @@
-package igmun.ramiro.neuralnetworkrestapi.mnistDataSamples;
+package igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples;
 
 public interface DataSample {
 

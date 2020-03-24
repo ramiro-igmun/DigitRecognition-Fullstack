@@ -1,4 +1,4 @@
-package igmun.ramiro.neuralnetworkrestapi.mnistDataSamples;
+package igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples;
 
 import java.io.Serializable;
 import java.util.Arrays;

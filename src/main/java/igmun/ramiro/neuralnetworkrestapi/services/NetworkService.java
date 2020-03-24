@@ -1,8 +1,8 @@
 package igmun.ramiro.neuralnetworkrestapi.services;
 
-import igmun.ramiro.neuralnetworkrestapi.dtos.NetworkDTO;
-import igmun.ramiro.neuralnetworkrestapi.io.CvsReader;
-import igmun.ramiro.neuralnetworkrestapi.network.Network;
+import igmun.ramiro.neuralnetworkrestapi.domain.dtos.NetworkDTO;
+import igmun.ramiro.neuralnetworkrestapi.mnistData.io.CvsReader;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.Network;
 import igmun.ramiro.neuralnetworkrestapi.utils.ImageToMatrix;
 import org.springframework.stereotype.Service;
 

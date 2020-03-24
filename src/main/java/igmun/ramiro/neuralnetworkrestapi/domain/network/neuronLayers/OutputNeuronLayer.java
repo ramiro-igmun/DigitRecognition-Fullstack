@@ -1,4 +1,4 @@
-package igmun.ramiro.neuralnetworkrestapi.network.neuronLayers;
+package igmun.ramiro.neuralnetworkrestapi.domain.network.neuronLayers;
 
 public class OutputNeuronLayer extends NeuronLayer {
 

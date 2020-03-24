@@ -1,9 +1,9 @@
-package igmun.ramiro.neuralnetworkrestapi.io;
+package igmun.ramiro.neuralnetworkrestapi.mnistData.io;
 
 
 
-import igmun.ramiro.neuralnetworkrestapi.mnistDataSamples.DataSample;
-import igmun.ramiro.neuralnetworkrestapi.mnistDataSamples.NumberDataSample;
+import igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples.DataSample;
+import igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples.NumberDataSample;
 
 import java.io.File;
 import java.io.FileNotFoundException;

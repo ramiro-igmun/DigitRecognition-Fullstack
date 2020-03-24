@@ -1,7 +1,7 @@
 package igmun.ramiro.neuralnetworkrestapi.controllers;
 
-import igmun.ramiro.neuralnetworkrestapi.dtos.NetworkDTO;
-import igmun.ramiro.neuralnetworkrestapi.network.Network;
+import igmun.ramiro.neuralnetworkrestapi.domain.dtos.NetworkDTO;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.Network;
 import igmun.ramiro.neuralnetworkrestapi.services.NetworkService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

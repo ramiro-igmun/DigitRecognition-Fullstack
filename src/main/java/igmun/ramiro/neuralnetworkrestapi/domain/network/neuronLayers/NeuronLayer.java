@@ -1,8 +1,8 @@
-package igmun.ramiro.neuralnetworkrestapi.network.neuronLayers;
+package igmun.ramiro.neuralnetworkrestapi.domain.network.neuronLayers;
 
-import igmun.ramiro.neuralnetworkrestapi.network.Network;
-import igmun.ramiro.neuralnetworkrestapi.network.Neuron;
-import igmun.ramiro.neuralnetworkrestapi.network.WeightMatrix;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.Network;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.Neuron;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.WeightMatrix;
 
 import java.io.Serializable;
 import java.util.ArrayList;

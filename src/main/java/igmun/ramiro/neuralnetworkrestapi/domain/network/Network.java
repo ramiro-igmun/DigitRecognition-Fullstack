@@ -1,9 +1,9 @@
-package igmun.ramiro.neuralnetworkrestapi.network;
+package igmun.ramiro.neuralnetworkrestapi.domain.network;
 
-import igmun.ramiro.neuralnetworkrestapi.mnistDataSamples.DataSample;
-import igmun.ramiro.neuralnetworkrestapi.network.neuronLayers.HiddenNeuronLayer;
-import igmun.ramiro.neuralnetworkrestapi.network.neuronLayers.NeuronLayer;
-import igmun.ramiro.neuralnetworkrestapi.network.neuronLayers.OutputNeuronLayer;
+import igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples.DataSample;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.neuronLayers.HiddenNeuronLayer;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.neuronLayers.NeuronLayer;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.neuronLayers.OutputNeuronLayer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
