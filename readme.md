@@ -2,6 +2,8 @@
 The project consists on a Rest API backend, that holds the neural network architecture, and a frontend, that works just as a GUI to communicate with the API. [Link to deployed App](https://digit-recognition-fullstack.herokuapp.com/)
 
   ### Running The App:
+  
+   To run the program you must first __uncompress the mnist_test and mnist_train zip files__ in the working directory.
 
    You can run the app from the command line after installing Maven on your computer with the following command
    from the project folder:
