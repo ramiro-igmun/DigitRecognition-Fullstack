@@ -96,7 +96,7 @@ function App() {
         </Col>
       </Row>
       <Row>
-        <Col style={windowStyle}>
+        <Col style={{...windowStyle, padding:'3em'}}>
           <Article/>
         </Col>
       </Row>
