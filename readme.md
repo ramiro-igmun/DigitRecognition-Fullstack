@@ -18,10 +18,13 @@ The project consists on a Rest API backend, that holds the neural network archit
   
   * __Backend__
   
-    The neural network architecture is built in plain Java, without the use of any additional libraries. On top of the Neural Network, I       have built a Rest API using Spring Boot with Spring Web.
+    The neural network architecture is built in plain Java, without the use of any additional libraries. On top of the Neural Network, I
+    have built a REST API using Spring Boot with Spring Web.
 
   * __Frontend__
   
-    The front end is a single page application built using ReactJS. In addition to having an UI for the creation and training of a      Neural Network, it has a canvas that can get the handwritten digits entered by the user and send the data to the Backend for processing.
+    The front end is a single page application built using ReactJS. In addition to having an UI for the creation and training of a
+    Neural Network, it has a canvas that can get the handwritten digits entered by the user and send the data to the Backend for processing.
+  
     
  

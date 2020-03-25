@@ -1,17 +1,17 @@
 import React, { useCallback, useEffect, useRef, useState, forwardRef, useImperativeHandle } from 'react';
 
-const Canvas = forwardRef(({ width, height, style },ref) => {
+const Canvas = forwardRef(({ width, height, style }, ref) => {
   const canvasRef = useRef(null);
   const [isPainting, setIsPainting] = useState(false);
   const [mousePosition, setMousePosition] = useState(undefined);
 
-    const exitAndClear = useCallback(() => {
+  const exitAndClear = useCallback(() => {
     setIsPainting(false);
     setMousePosition(undefined);
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-      context.clearRect(0,0,width,height);
-    }, [width,height]);
+    context.clearRect(0, 0, width, height);
+  }, [width, height]);
 
   const startPaint = useCallback((event) => {
     const coordinates = getCoordinates(event);
@@ -82,7 +82,7 @@ const Canvas = forwardRef(({ width, height, style },ref) => {
 
     const canvas = canvasRef.current;
     const rect = canvas.getBoundingClientRect()
-    
+
     return { x: event.clientX - rect.left, y: event.clientY - rect.top };
   };
 
@@ -116,10 +116,15 @@ const Canvas = forwardRef(({ width, height, style },ref) => {
   }
 
   useImperativeHandle(ref, () => {
-    return {getData}
+    return { getData }
   })
 
-  return <div style={{...style,border:'solid', borderWidth: '1px', borderColor: 'gray'}}><canvas ref={canvasRef} height={height} width={width} /></div>;
+  return (
+    <>
+    <div style={{ margin: '0 auto', width: 'max-content', color: 'gray' }}>Draw your number here:</div>
+    <div style={{ ...style, border: 'solid', borderWidth: '1px', borderColor: 'gray' }}><canvas ref={canvasRef} height={height} width={width} /></div>
+    </>
+  )
 });
 
 Canvas.defaultProps = {

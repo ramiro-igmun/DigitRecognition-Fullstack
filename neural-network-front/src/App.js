@@ -35,7 +35,7 @@ function App() {
     const canvas = canvasRef.current;
     const data = canvas.getData().replace(/^data:image\/(png|jpeg);base64,/, "");
     const answer = await services.guessOutput(data);
-    setAnswer(answer)
+    setAnswer(answer);
     console.log('answer', answer);
   }
 
@@ -64,7 +64,7 @@ function App() {
     }
     const accuracy = await services.getAccuracy();
     setCurrentNetwork({ ...currentNetwork, accuracy: accuracy })
-    window.localStorage.setItem('currentNetwork', JSON.stringify({ ...currentNetwork, accuracy: accuracy }))
+    window.localStorage.setItem('currentNetwork', JSON.stringify({ ...currentNetwork, accuracy: accuracy }));
     console.log('accuracy', accuracy)
   }
 
@@ -88,10 +88,10 @@ function App() {
       <Row >
         <Col md lg='4' style={{ padding: '1rem' }}>
           <div onMouseUp={getData} ><Canvas style={{...centerElement, backgroundColor:'white'}} ref={canvasRef} width={250} height={250} /></div>
-          <Answer style={centerElement} answers={answeredValues}></Answer>
+          <Answer style={centerElement} answers={answeredValues}/>
         </Col>
         <Col lg>
-          <CreateNetwork style={windowStyle} handleCreate={handleCreate} setNetworkDTO={setNetworkDTO} networkDTO={networkDTO}></CreateNetwork>
+          <CreateNetwork style={windowStyle} handleCreate={handleCreate} setNetworkDTO={setNetworkDTO} networkDTO={networkDTO}/>
           <CurrentNetwork style={windowStyle} currentNetwork={currentNetwork} handleTrain={handleTrain} handleGetAccuracy={handleGetAccuracy} />
         </Col>
       </Row>

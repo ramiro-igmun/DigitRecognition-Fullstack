@@ -1,6 +1,6 @@
 package igmun.ramiro.neuralnetworkrestapi;
 
-import igmun.ramiro.neuralnetworkrestapi.domain.network.Neuron;
+import igmun.ramiro.neuralnetworkrestapi.domain.network.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -18,19 +18,21 @@ const CreateBody = ({ setLayers, handleNewLayer, handleAddLayer, handleLearningR
     handleCreate()
   }
 
+  const hiddenLayersPlaceholder='Number of neurons (example: 2 layers with 16 neurons)'
+  const learningRatePlaceholder='Learning rate (example: 0.5)'
 
   return (
     <Row className='pt-4 pl-5 pr-5'>
       <label htmlFor="hiddenLayers">Add new hidden layer:</label>
         <InputGroup size='sm' className="mb-3">
-          <Form.Control onChange={handleNewLayer} id="hiddenLayers" placeholder="Number of neurons" aria-label="Number of neurons" />
+          <Form.Control onChange={handleNewLayer} id="hiddenLayers" placeholder={hiddenLayersPlaceholder} aria-label="Number of neurons" />
           <InputGroup.Append>
             <Button onClick={handleAddLayer} variant="outline-secondary">Add</Button>
           </InputGroup.Append>
         </InputGroup>
 
       <label htmlFor="learningRate">Set a learning rate:</label>
-      <FormControl id='learningRate' size='sm' placeholder='Learning rate' onChange={handleLearningRateChange}></FormControl>
+      <FormControl id='learningRate' size='sm' placeholder={learningRatePlaceholder} onChange={handleLearningRateChange}></FormControl>
       <Button onClick={resetAndCreate} className='mt-4' variant='primary' size='sm'>Create Network</Button>
     </Row>
   )

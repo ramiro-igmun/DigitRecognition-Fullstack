@@ -25,7 +25,6 @@ public class Network {
 
   public double[] getAnswerArray(double[] inputData) {
     forwardPass(addBiasToInputData(inputData));
-    //return outputNeuronLayer.getNeurons().stream().max(Comparator.comparing(Neuron::getActivation)).get().getId();
     return outputNeuronLayer.getNeuronActivations();
   }
 

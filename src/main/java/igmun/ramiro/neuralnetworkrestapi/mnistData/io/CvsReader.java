@@ -4,6 +4,7 @@ package igmun.ramiro.neuralnetworkrestapi.mnistData.io;
 
 import igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples.DataSample;
 import igmun.ramiro.neuralnetworkrestapi.mnistData.mnistDataSamples.NumberDataSample;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.io.FileNotFoundException;
